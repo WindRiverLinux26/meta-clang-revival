@@ -56,6 +56,7 @@ SRC_URI = "\
 # Fallback to no-PIE if not set
 GCCPIE ??= ""
 
+VENDOR_REVISION_SKIP = "1"
 S = "${TMPDIR}/work-shared/llvm-project-source-${PV}-${PR}/sources/llvm-project-source-${PV}-${PV}"
 B ?= "${WORKDIR}/llvm-project-source-${PV}/build.${HOST_SYS}.${TARGET_SYS}"
 
